@@ -85,6 +85,7 @@ import {
   NotificationsPage,
   UserNotificationSettingsCard,
 } from '@backstage/plugin-notifications';
+import { CodeQualityPage } from '@backstage/plugin-code-quality';
 
 const app = createApp({
   apis,
@@ -222,6 +223,7 @@ const routes = (
       {customDevToolsPage}
     </Route>
     <Route path="/notifications" element={<NotificationsPage />} />
+    <Route path="/code-quality" element={<CodeQualityPage />} />
   </FlatRoutes>
 );
 
